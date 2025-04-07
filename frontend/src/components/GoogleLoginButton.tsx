@@ -14,7 +14,7 @@ function GoogleLoginButton({text="signin_with"}:{text:"signin_with"|"signup_with
         const googleToken = credentialResponse.credential
         
         //Send the token to the backend
-        const res = await fetch("http://localhost:5001/api/user/google/auth",{
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/user/google/auth`,{
             method:"POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({token:googleToken})
