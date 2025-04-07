@@ -149,7 +149,7 @@ function SignIn() {
             <GoogleLoginButton text="signin_with" />
           </div>
           <h2 className=" text-sm text-center">
-            Don't have an account?{" "}
+            Don &apos t have an account?{" "}
             <Link className=" underline font-semibold" href={"/signUp"} prefetch={true}>
               Sign Up
             </Link>
