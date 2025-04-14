@@ -1,6 +1,6 @@
 import io from "socket.io-client"
 
-const URL = process.env.NEXT_PATH_URL || "http://localhost:5001"
+const URL = process.env.NEXT_PUBLIC_URL || "http://localhost:5001"
 
 const socket = io(URL, {
     autoConnect: false,         // Ensures you call `.connect()` manually
