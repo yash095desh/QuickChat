@@ -38,7 +38,7 @@ function ChatBox() {
     return () => {
       socket.off("newMessage", handleNewMessage); // Clean up on unmount
     };
-  }, []);
+  }, [currentChat]);
 
   useEffect(() => {
     messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
